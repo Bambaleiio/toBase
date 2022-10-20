@@ -3,7 +3,7 @@ def toBase(n, base):
         return [0]
     digits = []
     while n:
-        digits.append(int(n % base))
+        digits.append(n % base)
         n //= base
     return digits[::-1]
 
